@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'fototo' do
+    pod 'JXPhotoBrowser'
+    pod 'DynamicBlurView', '~> 3.0.1'
+    pod 'Toast-Swift', '~> 5.0.0'
+    pod 'LeanCloud'
+end

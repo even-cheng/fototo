@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FT_LoginController" customModule="fototo" customModuleProvider="target">
+            <connections>
+                <outlet property="loginBgView" destination="v4T-fD-m3j" id="ohY-L8-0Og"/>
+                <outlet property="loginStackView" destination="TXn-JV-52Y" id="KaZ-kv-z8x"/>
+                <outlet property="titleLabel" destination="0qS-NT-I03" id="st8-95-otQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="HHE-xi-tgw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7y-Xq-Cbq">
+                    <rect key="frame" x="0.0" y="0.0" width="321" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="3uq-Hi-IIT">
+                            <rect key="frame" x="0.0" y="0.0" width="321" height="200"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用苹果账号登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qS-NT-I03">
+                            <rect key="frame" x="87" y="15" width="147" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMY-H3-Zi0">
+                            <rect key="frame" x="276" y="0.0" width="45" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="Pe4-Kp-k0q"/>
+                                <constraint firstAttribute="height" constant="40" id="dc9-36-R80"/>
+                            </constraints>
+                            <state key="normal" image="CloseButton"/>
+                            <connections>
+                                <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="WFC-0y-DWd"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4T-fD-m3j">
+                            <rect key="frame" x="20" y="90" width="281" height="90"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXn-JV-52Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="281" height="90"/>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="TXn-JV-52Y" secondAttribute="bottom" id="4oC-gH-fdF"/>
+                                <constraint firstItem="TXn-JV-52Y" firstAttribute="top" secondItem="v4T-fD-m3j" secondAttribute="top" id="AGC-Vo-5bV"/>
+                                <constraint firstItem="TXn-JV-52Y" firstAttribute="leading" secondItem="v4T-fD-m3j" secondAttribute="leading" id="Ie5-3Q-x6A"/>
+                                <constraint firstAttribute="trailing" secondItem="TXn-JV-52Y" secondAttribute="trailing" id="YSd-em-IYE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="v4T-fD-m3j" firstAttribute="top" secondItem="GMY-H3-Zi0" secondAttribute="bottom" constant="50" id="AOh-8h-UeE"/>
+                        <constraint firstAttribute="trailing" secondItem="v4T-fD-m3j" secondAttribute="trailing" constant="20" id="FjU-pS-YgT"/>
+                        <constraint firstAttribute="trailing" secondItem="GMY-H3-Zi0" secondAttribute="trailing" id="HDK-w8-HaC"/>
+                        <constraint firstAttribute="trailing" secondItem="3uq-Hi-IIT" secondAttribute="trailing" id="JQP-BO-pkp"/>
+                        <constraint firstAttribute="height" constant="200" id="JpM-ND-1aI"/>
+                        <constraint firstAttribute="bottom" secondItem="3uq-Hi-IIT" secondAttribute="bottom" id="SGy-Fa-pYG"/>
+                        <constraint firstItem="0qS-NT-I03" firstAttribute="top" secondItem="o7y-Xq-Cbq" secondAttribute="top" constant="15" id="U5Y-IP-XBm"/>
+                        <constraint firstItem="v4T-fD-m3j" firstAttribute="leading" secondItem="o7y-Xq-Cbq" secondAttribute="leading" constant="20" id="YRA-xB-VFJ"/>
+                        <constraint firstItem="3uq-Hi-IIT" firstAttribute="leading" secondItem="o7y-Xq-Cbq" secondAttribute="leading" id="Ztc-2d-Hwe"/>
+                        <constraint firstItem="GMY-H3-Zi0" firstAttribute="top" secondItem="o7y-Xq-Cbq" secondAttribute="top" id="bsA-iX-t1u"/>
+                        <constraint firstItem="0qS-NT-I03" firstAttribute="centerX" secondItem="3uq-Hi-IIT" secondAttribute="centerX" id="dHJ-vt-3oK"/>
+                        <constraint firstItem="3uq-Hi-IIT" firstAttribute="top" secondItem="o7y-Xq-Cbq" secondAttribute="top" id="oIe-Jb-IaB"/>
+                        <constraint firstAttribute="bottom" secondItem="v4T-fD-m3j" secondAttribute="bottom" constant="20" id="zmE-Mj-Sih"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="o7y-Xq-Cbq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OzD-mj-92x"/>
+                <constraint firstItem="o7y-Xq-Cbq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PSC-cs-np7"/>
+                <constraint firstAttribute="trailing" secondItem="o7y-Xq-Cbq" secondAttribute="trailing" id="Pdc-3b-lcb"/>
+                <constraint firstAttribute="bottom" secondItem="o7y-Xq-Cbq" secondAttribute="bottom" id="VBL-mG-0yp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="70.28985507246378" y="238.39285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackgroundImage" width="375" height="667"/>
+        <image name="CloseButton" width="22" height="22"/>
+    </resources>
+</document>

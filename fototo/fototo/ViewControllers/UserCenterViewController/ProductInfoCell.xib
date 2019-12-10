@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" tag="999" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProductInfoCell" rowHeight="125" id="xXu-xA-ovy" customClass="ProductInfoCell" customModule="Fototo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xXu-xA-ovy" id="T1k-Tx-nf5">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- - - -" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4h-VX-jci">
+                        <rect key="frame" x="30" y="34" width="305" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0个人正在讨论：" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBa-HG-jKj">
+                        <rect key="frame" x="30" y="99.5" width="94" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获得0人喜欢" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X3-5W-1CI">
+                        <rect key="frame" x="30" y="56" width="63.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYH-QI-l7N" customClass="DOFavoriteButton" customModule="Fototo" customModuleProvider="target">
+                        <rect key="frame" x="319.5" y="34" width="35.5" height="35.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rYH-QI-l7N" secondAttribute="height" id="kSG-E9-Rrv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="love"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="imageColorOn">
+                                <color key="value" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="imageColorOff">
+                                <color key="value" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                <color key="value" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                <color key="value" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lBa-HG-jKj" firstAttribute="leading" secondItem="6X3-5W-1CI" secondAttribute="leading" id="7yr-cC-sbi"/>
+                    <constraint firstItem="rYH-QI-l7N" firstAttribute="trailing" secondItem="T1k-Tx-nf5" secondAttribute="trailingMargin" id="HEr-OO-41r"/>
+                    <constraint firstItem="h4h-VX-jci" firstAttribute="leading" secondItem="T1k-Tx-nf5" secondAttribute="leading" constant="30" id="O8I-Eo-mmz"/>
+                    <constraint firstItem="rYH-QI-l7N" firstAttribute="top" secondItem="h4h-VX-jci" secondAttribute="top" id="QBQ-yV-gUC"/>
+                    <constraint firstItem="lBa-HG-jKj" firstAttribute="leading" secondItem="h4h-VX-jci" secondAttribute="leading" id="RVa-aM-UYW"/>
+                    <constraint firstItem="6X3-5W-1CI" firstAttribute="top" secondItem="h4h-VX-jci" secondAttribute="bottom" constant="5" id="WB0-KH-QVz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lBa-HG-jKj" secondAttribute="bottom" id="aGz-ns-AHS"/>
+                    <constraint firstItem="lBa-HG-jKj" firstAttribute="top" secondItem="6X3-5W-1CI" secondAttribute="bottom" constant="30" id="kbF-ma-OOJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="h4h-VX-jci" secondAttribute="trailing" constant="20" id="vzg-M6-h9B"/>
+                    <constraint firstItem="rYH-QI-l7N" firstAttribute="bottom" secondItem="6X3-5W-1CI" secondAttribute="bottom" id="yas-44-bVI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="commentLabel" destination="lBa-HG-jKj" id="hqQ-Zh-BRX"/>
+                <outlet property="likeButton" destination="rYH-QI-l7N" id="VZz-Jj-6SA"/>
+                <outlet property="receiveLikesLabel" destination="6X3-5W-1CI" id="6W1-6a-0np"/>
+                <outlet property="titleLabel" destination="h4h-VX-jci" id="pJy-gW-Plp"/>
+            </connections>
+            <point key="canvasLocation" x="49" y="-6"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="love" width="20" height="20"/>
+    </resources>
+</document>

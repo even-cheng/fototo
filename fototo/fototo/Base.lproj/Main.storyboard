@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L1n-Ia-Jrw">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo View Controller-->
+        <scene sceneID="7vj-xm-Mde">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="owA-8G-88G" customClass="DemoViewController" customModule="Fototo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CpK-wn-s3i"/>
+                        <viewControllerLayoutGuide type="bottom" id="mRg-Mx-OVI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CO1-du-RsN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7c2-bQ-lT7" userLabel="backView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-Zd-rH1" userLabel="fontView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cdv-Zd-rH1" secondAttribute="bottom" id="0N3-zl-hf6"/>
+                            <constraint firstItem="cdv-Zd-rH1" firstAttribute="leading" secondItem="CO1-du-RsN" secondAttribute="leading" id="30Q-tS-tCo"/>
+                            <constraint firstAttribute="trailing" secondItem="cdv-Zd-rH1" secondAttribute="trailing" id="F1i-uV-B47"/>
+                            <constraint firstAttribute="bottom" secondItem="7c2-bQ-lT7" secondAttribute="bottom" id="Iaf-Km-U4a"/>
+                            <constraint firstAttribute="trailing" secondItem="7c2-bQ-lT7" secondAttribute="trailing" id="PXx-Bl-mKe"/>
+                            <constraint firstItem="7c2-bQ-lT7" firstAttribute="leading" secondItem="CO1-du-RsN" secondAttribute="leading" id="loQ-MJ-4TH"/>
+                            <constraint firstItem="7c2-bQ-lT7" firstAttribute="top" secondItem="CO1-du-RsN" secondAttribute="top" id="tMv-6k-CYI"/>
+                            <constraint firstItem="cdv-Zd-rH1" firstAttribute="top" secondItem="CO1-du-RsN" secondAttribute="top" id="wEE-bb-9Bk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Mck-gv-XOR">
+                        <view key="titleView" contentMode="scaleToFill" id="U0J-H7-fvX">
+                            <rect key="frame" x="67.5" y="5.5" width="240" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在更新作品..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3m-Kx-lxj">
+                                    <rect key="frame" x="57.5" y="6" width="125" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="520-yb-mma">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="240" id="i0E-4m-90q"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="scrollToFirst:" destination="owA-8G-88G" eventType="touchDownRepeat" id="jRA-el-892"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="520-yb-mma" secondAttribute="bottom" id="5gG-ii-Hra"/>
+                                <constraint firstItem="520-yb-mma" firstAttribute="leading" secondItem="U0J-H7-fvX" secondAttribute="leading" id="JKm-wC-k3p"/>
+                                <constraint firstItem="C3m-Kx-lxj" firstAttribute="centerX" secondItem="U0J-H7-fvX" secondAttribute="centerX" id="PuB-do-nSE"/>
+                                <constraint firstAttribute="trailing" secondItem="520-yb-mma" secondAttribute="trailing" id="gQp-mq-e01"/>
+                                <constraint firstItem="520-yb-mma" firstAttribute="top" secondItem="U0J-H7-fvX" secondAttribute="top" id="n4j-Tw-R1Q"/>
+                                <constraint firstItem="C3m-Kx-lxj" firstAttribute="centerY" secondItem="U0J-H7-fvX" secondAttribute="centerY" id="nxR-kH-Xme"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" tag="1" title="Item" id="mbm-hT-lYD" customClass="AnimatingBarButton" customModule="Fototo" customModuleProvider="target">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="selectedImageName" value="CloseButton"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                    <real key="value" value="0.29999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backView" destination="7c2-bQ-lT7" id="XPc-dN-hOV"/>
+                        <outlet property="fontView" destination="cdv-Zd-rH1" id="DnM-lp-DW0"/>
+                        <outlet property="titleLabel" destination="C3m-Kx-lxj" id="Pde-s3-ije"/>
+                        <outlet property="titleView" destination="U0J-H7-fvX" id="Nct-eD-i3r"/>
+                        <segue destination="7RW-i0-HfN" kind="show" identifier="NoName" id="enc-PY-spo"/>
+                        <segue destination="2mJ-uE-n1G" kind="show" id="myg-DJ-DDX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cU0-3v-d17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256.8" y="427.73613193403304"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ECt-UZ-ruI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L1n-Ia-Jrw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5hs-Ir-kRn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oix-Tx-3Sb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="owA-8G-88G" kind="relationship" relationship="rootViewController" id="1aC-mc-OKf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yh-rW-xNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="428"/>
+        </scene>
+        <!--Demo Table View Controller-->
+        <scene sceneID="7Xk-ar-e7L">
+            <objects>
+                <tableViewController storyboardIdentifier="DemoTableViewController" automaticallyAdjustsScrollViewInsets="NO" id="7RW-i0-HfN" customClass="DemoTableViewController" customModule="Fototo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="28" id="2SU-lJ-2AP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="7RW-i0-HfN" id="gZB-9b-euG"/>
+                            <outlet property="delegate" destination="7RW-i0-HfN" id="28D-Ct-5A9"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="9zG-W9-jGP">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" id="sSw-AG-wrF"/>
+                        <barButtonItem key="rightBarButtonItem" image="CloseButton" id="liu-ff-VuS">
+                            <connections>
+                                <action selector="backButtonHandler:" destination="7RW-i0-HfN" id="cOO-dk-yI9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="koT-TQ-RUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="126"/>
+        </scene>
+        <!--Auth Center View Controller-->
+        <scene sceneID="yBo-4g-3LD">
+            <objects>
+                <tableViewController storyboardIdentifier="AuthCenterViewController" automaticallyAdjustsScrollViewInsets="NO" id="2mJ-uE-n1G" customClass="AuthCenterViewController" customModule="Fototo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9bu-7W-baS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="2mJ-uE-n1G" id="b7r-No-E3D"/>
+                            <outlet property="delegate" destination="2mJ-uE-n1G" id="4SX-ka-Tvm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Vxl-aR-Iob">
+                        <barButtonItem key="leftBarButtonItem" id="I7z-vA-ndB"/>
+                        <barButtonItem key="rightBarButtonItem" image="CloseButton" id="Dye-im-h5g">
+                            <connections>
+                                <action selector="closeAction:" destination="2mJ-uE-n1G" id="gfR-xo-RhX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ax8-wX-mJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2104.8000000000002" y="806.44677661169419"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CloseButton" width="22" height="22"/>
+    </resources>
+    <color key="tintColor" red="0.97429201227993889" green="0.97273087832317329" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
