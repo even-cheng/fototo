@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             try LCApplication.default.set(
                 id: "FDmvhdfVYiU1IUt5rMSfCbD6-gzGzoHsz",
                 key: "R56TGiEd17DMJSusv5FpIyNP",
-                configuration:.default
+                serverURL: "https://fdmvhdfv.lc-cn-n1-shared.com"
             )
         } catch {
             print(error)
