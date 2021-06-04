@@ -1,7 +1,6 @@
 # LeanCloud Swift SDK
 
-[![Build Status](https://travis-ci.org/leancloud/swift-sdk.svg?branch=master)](https://travis-ci.org/leancloud/swift-sdk)
-[![Coverage Status](https://coveralls.io/repos/github/leancloud/swift-sdk/badge.svg?branch=master)](https://coveralls.io/github/leancloud/swift-sdk?branch=master)
+![Build Status](https://github.com/leancloud/swift-sdk/workflows/Release%20Drafter/badge.svg)
 
 ## Features
   * [x] Data Storage
@@ -17,14 +16,10 @@
   * If you **found a bug**, open an issue, or open a ticket in [LeanTicket][LeanTicket].
   * If you **want to contribute**, submit a pull request.
 
-## Installation
+[LeanTicket]: https://leanticket.cn/
 
-Please read the [installation][installation] page.
+## Installation & Quick Start
 
-## Quick Start
+Please read [this documentation][doc].
 
-Please read the [quick start][quick-start] page.
-
-[LeanTicket]: https://leanticket.cn/t/leancloud
-[quick-start]: https://github.com/leancloud/swift-sdk/wiki/Quick-Start
-[installation]: https://github.com/leancloud/swift-sdk/wiki/Installation
+[doc]: https://docs.leancloud.app/sdk_setup-swift.html
